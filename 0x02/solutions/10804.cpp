@@ -26,3 +26,27 @@ int main(void){
     
   for(int i = 1; i <= 20; i++) cout << num[i] << ' ';
 }
+
+
+##30.01.2022 DEBUG NEEDED 이거 왜 
+#include <bits/stdc++.h>
+using namespace std ;
+
+int num[21];
+int main(void)
+{
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    
+    for(int i=1 ; i<21 ; i++) num[i]=i;
+    for(int i=1 ; i<11 ; i++) 
+    {
+        int a, b ;
+        cin >> a >> b;
+ 
+        for (int k = 0 ; k<(b-a+1) ; k++) 
+            num[a+k] = b-k ;
+    }
+    
+    for(int i= 1; i<21; i++) cout << num[i] << ' ' ;
+}
