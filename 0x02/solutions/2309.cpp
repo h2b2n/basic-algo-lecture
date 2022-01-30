@@ -1,6 +1,7 @@
 // Authored by : wogha95
 // Co-authored by : -
 // http://boj.kr/ca6967094ffc44a9887b331a045d8509
+// 30.01.2022 
 #include <bits/stdc++.h>
 using namespace std;
 
