@@ -5,7 +5,7 @@
 using namespace std;
 
 int arr[10];
-int func1(int t)
+void func1(int t)
 {
     string s = to_string(t);
     for(auto c:s) arr[c-'0']++;
