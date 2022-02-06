@@ -4,6 +4,14 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+int arr[10];
+int func1(int t)
+{
+    string s = to_string(t);
+    for(auto c:s) arr[c-'0']++;
+    for(int i=0 ; i<10; i++) cout << arr[i] << "\n"; 
+}
+
 int main(void) {
   ios::sync_with_stdio(0);
   cin.tie(0);
@@ -17,4 +25,6 @@ int main(void) {
     t/=10;
   }
   for (int i=0; i<10; ++i) cout << d[i] << '\n';
+  
+  func1(t);
 }
