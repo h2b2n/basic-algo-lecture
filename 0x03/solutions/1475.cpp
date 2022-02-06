@@ -5,7 +5,7 @@
 using namespace std;
 
 int arr[10]; 
-int func1(int N) 
+void func1(int N) 
 {
   while(N>0){
         arr[N%10]++;
