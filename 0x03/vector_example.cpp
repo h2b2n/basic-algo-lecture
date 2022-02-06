@@ -19,7 +19,7 @@ int main(void) {
   v4.clear(); // {}
   
   vector<int> v5 = {1,2,3,4,5,6} ;
-  for(int e :v1) cout << e << ' '; //range-base for loop
+  for(int e : v5) cout << e << ' '; //range-base for loop
   for(int i=0; i<v5.size(); i++) cout << v5[i] << ' ';
   
 }
