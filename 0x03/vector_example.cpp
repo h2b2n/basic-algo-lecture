@@ -17,4 +17,9 @@ int main(void) {
   cout << v4[0] << v4[1] << v4[2] << '\n';
   v4.pop_back(); // {1,2}
   v4.clear(); // {}
+  
+  vector<int> v5 = {1,2,3,4,5,6} ;
+  for(int e :v1) cout << e << ' '; //range-base for loop
+  for(int i=0; i<v5.size(); i++) cout << v5[i] << ' ';
+  
 }
