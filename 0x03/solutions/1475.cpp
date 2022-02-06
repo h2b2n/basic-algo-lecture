@@ -4,6 +4,19 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+int arr[10]; 
+int func1(int N) 
+{
+  while(N>0){
+        arr[N%10]++;
+        num=N/10 ;
+    }
+    int sixnine= (arr[6]+arr[9]+1)/2 ;
+    arr[6] = arr[9] = sixnine ;
+    
+    cout << *max_element(arr,arr+10);
+}
+
 int main() {
   ios::sync_with_stdio(0);
   cin.tie(0);
@@ -25,4 +38,6 @@ int main() {
   // (a[6]+a[9])/2를 올림한 값이 6, 9에 대한 필요한 세트의 수이므로 (a[6]+a[9]+1)/2을 계산
   ans = max(ans, (a[6]+a[9]+1)/2);
   cout << ans;
+  
+  func1(N) ; 
 }
